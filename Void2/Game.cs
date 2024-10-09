@@ -29,6 +29,7 @@ namespace Game10003
         {
             Window.SetTitle("Void");
             Window.SetSize(400, 400);
+            
         }
 
         /// <summary>
@@ -41,6 +42,9 @@ namespace Game10003
             Draw.FillColor = Color.Red;
             Draw.LineColor = Color.Clear;
             Draw.Circle(Window.Size / 2, 50);
+            Vector2[] starDirections; {
+                Vector2 r = Random.Direction();
+            }
 
             if (Input.IsMouseButtonDown(MouseInput.Left))
             {
@@ -59,6 +63,17 @@ namespace Game10003
 
             Draw.FillColor = Color.Black;
             Draw.Circle(Window.Size / 2, 10);
+
+            for (int i = 0; i < starDirections.Length; i++)
+            {
+                Vector2 starDirection = starDirections[i];
+                DrawStar(starDirection);
+            }
+        }
+
+        private void DrawStar(Vector2 starDirection)
+        {
+            throw new NotImplementedException();
         }
     }
 }
@@ -69,4 +84,5 @@ namespace Game10003
 
 
 //THERE IS NOTHING OVER HERE :D
+//I fiiixed iiiiit
 
